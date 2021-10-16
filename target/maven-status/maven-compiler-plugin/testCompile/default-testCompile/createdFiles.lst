@@ -1,0 +1,8 @@
+runners/RegressionRunnerTest.class
+utilities/Driver.class
+utilities/Button.class
+utilities/ConfigReader.class
+pojo/RightBowlDataContainer.class
+org/example/pages/MainPage.class
+pojo/LeftBowlDataContainer.class
+step_defs/FakeGoldBar.class

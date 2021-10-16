@@ -1,0 +1,378 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7725971208,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Fetch Rewards Game page",
+            "match": {
+              "location": "FakeGoldBar.user_is_on_Fetch_Rewards_Game_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "As a user, I want to be able to find the correct fake gold bar",
+        "description": "",
+        "id": "balance-scale-program;as-a-user,-i-want-to-be-able-to-find-the-correct-fake-gold-bar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 524607042,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user inserts the following numbers in the left bowl",
+            "match": {
+              "location": "FakeGoldBar.user_inserts_the_following_numbers_in_the_left_bowl(LeftBowlDataContainer\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "left0",
+                  "left1",
+                  "left2",
+                  "left3"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "0",
+                  "1",
+                  "2",
+                  "3"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202242916,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user inserts the following numbers in the right bowl",
+            "match": {
+              "location": "FakeGoldBar.user_inserts_the_following_numbers_in_the_right_bowl(RightBowlDataContainer\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "right0",
+                  "right1",
+                  "right2",
+                  "right3"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "4",
+                  "5",
+                  "6",
+                  "7"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2250399292,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on \"Weigh\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Weigh",
+                  "offset": 16
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_button(Button)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53291375,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user verifies the weighing list",
+            "match": {
+              "location": "FakeGoldBar.user_verifies_the_weighing_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2098938708,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on \"Reset\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reset",
+                  "offset": 16
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_button(Button)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3080478667,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user inserts 2 numbers in the left bowl",
+            "match": {
+              "location": "FakeGoldBar.user_inserts_2_numbers_in_the_left_bowl()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3105782958,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user inserts 2 numbers in the right bowl",
+            "match": {
+              "location": "FakeGoldBar.user_inserts_2_numbers_in_the_right_bowl()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2036772250,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user clicks on \"Weigh\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Weigh",
+                  "offset": 16
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_button(Button)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21688791,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user verifies the weighing list second time",
+            "match": {
+              "location": "FakeGoldBar.user_verifies_the_weighing_list_second_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2032817125,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks on \"Reset\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Reset",
+                  "offset": 16
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_button(Button)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2060642000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user inserts 1 number in the left bowl",
+            "match": {
+              "location": "FakeGoldBar.user_inserts_1_number_in_the_left_bowl()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2056644583,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user inserts 1 number in the right bowl",
+            "match": {
+              "location": "FakeGoldBar.user_inserts_1_number_in_the_right_bowl()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2030299666,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on \"Weigh\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Weigh",
+                  "offset": 16
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_button(Button)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20560833,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user verifies the weighing list third time",
+            "match": {
+              "location": "FakeGoldBar.user_verifies_the_weighing_list_third_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1364089792,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user clicks on fake gold bar and verifies pop-up message \"Yay! You find it!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yay! You find it!",
+                  "offset": 58
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_fake_gold_bar_and_verifies_pop_up_message(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51584417,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user gets list of Weighings and outputs it",
+            "match": {
+              "location": "FakeGoldBar.user_gets_list_of_Weighings_and_outputs_it()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 296012458,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Fetch Rewards Game page",
+            "match": {
+              "location": "FakeGoldBar.user_is_on_Fetch_Rewards_Game_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "As a user, I want to be able to get error message when choosing wrong fake gold bar",
+        "description": "",
+        "id": "balance-scale-program;as-a-user,-i-want-to-be-able-to-get-error-message-when-choosing-wrong-fake-gold-bar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2083791250,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user clicks on random fake gold bar and verifies error pop-up message \"Oops! Try Again!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Oops! Try Again!",
+                  "offset": 71
+                }
+              ],
+              "location": "FakeGoldBar.user_clicks_on_random_fake_gold_bar_and_verifies_error_pop_up_message(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40088812291,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user gets list of Weighings and outputs it",
+            "match": {
+              "location": "FakeGoldBar.user_gets_list_of_Weighings_and_outputs_it()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Balance Scale Program",
+    "description": "",
+    "id": "balance-scale-program",
+    "keyword": "Feature",
+    "uri": "features/FakeGoldBar.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]

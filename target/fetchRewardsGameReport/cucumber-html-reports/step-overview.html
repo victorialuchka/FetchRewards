@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Fake Gold Bar 1.0-SNAPSHOT</td>
+                          <td>1</td>
+                        <td>15 Oct 2021, 21:27</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">FakeGoldBar.user_clicks_on_button(Button)</td>
+                <td>5</td>
+                <td class="duration" data-value="10449227041">10s 449ms</td>
+                <td class="duration" data-value="2089845408">2s 089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_clicks_on_fake_gold_bar_and_verifies_pop_up_message(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="1364089792">1s 364ms</td>
+                <td class="duration" data-value="1364089792">1s 364ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_clicks_on_random_fake_gold_bar_and_verifies_error_pop_up_message(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="2083791250">2s 083ms</td>
+                <td class="duration" data-value="2083791250">2s 083ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_gets_list_of_Weighings_and_outputs_it()</td>
+                <td>2</td>
+                <td class="duration" data-value="40140396708">40s 140ms</td>
+                <td class="duration" data-value="20070198354">20s 070ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_inserts_1_number_in_the_left_bowl()</td>
+                <td>1</td>
+                <td class="duration" data-value="2060642000">2s 060ms</td>
+                <td class="duration" data-value="2060642000">2s 060ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_inserts_1_number_in_the_right_bowl()</td>
+                <td>1</td>
+                <td class="duration" data-value="2056644583">2s 056ms</td>
+                <td class="duration" data-value="2056644583">2s 056ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_inserts_2_numbers_in_the_left_bowl()</td>
+                <td>1</td>
+                <td class="duration" data-value="3080478667">3s 080ms</td>
+                <td class="duration" data-value="3080478667">3s 080ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_inserts_2_numbers_in_the_right_bowl()</td>
+                <td>1</td>
+                <td class="duration" data-value="3105782958">3s 105ms</td>
+                <td class="duration" data-value="3105782958">3s 105ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_inserts_the_following_numbers_in_the_left_bowl(LeftBowlDataContainer>)</td>
+                <td>1</td>
+                <td class="duration" data-value="524607042">524ms</td>
+                <td class="duration" data-value="524607042">524ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_inserts_the_following_numbers_in_the_right_bowl(RightBowlDataContainer>)</td>
+                <td>1</td>
+                <td class="duration" data-value="202242916">202ms</td>
+                <td class="duration" data-value="202242916">202ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_is_on_Fetch_Rewards_Game_page()</td>
+                <td>2</td>
+                <td class="duration" data-value="8021983666">8s 021ms</td>
+                <td class="duration" data-value="4010991833">4s 010ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_verifies_the_weighing_list()</td>
+                <td>1</td>
+                <td class="duration" data-value="53291375">053ms</td>
+                <td class="duration" data-value="53291375">053ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_verifies_the_weighing_list_second_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="21688791">021ms</td>
+                <td class="duration" data-value="21688791">021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FakeGoldBar.user_verifies_the_weighing_list_third_time()</td>
+                <td>1</td>
+                <td class="duration" data-value="20560833">020ms</td>
+                <td class="duration" data-value="20560833">020ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>14</td>
+              <td>20</td>
+              <td class="duration">1m 13s 185ms</td>
+              <td class="duration">3s 659ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
